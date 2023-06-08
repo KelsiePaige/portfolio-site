@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #542F7D;
+}
+
