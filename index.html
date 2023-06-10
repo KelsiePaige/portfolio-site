@@ -9,96 +9,224 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik:wght@400;500;600;700;900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/9f5df0578d.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" integrity="sha384-ICOlZarapRIX6UjKPcWKEpubjg7lGADN7Y9fYP4DU9zm0aPFhgnP5ef+XFaPyKv+" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js"
+        integrity="sha384-ICOlZarapRIX6UjKPcWKEpubjg7lGADN7Y9fYP4DU9zm0aPFhgnP5ef+XFaPyKv+"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <section class="hero">
         <!-- Navigation -->
-        <button class="contact">Get in touch</button>
-        <h1>Hi, I'm Kelsie. I'm a <span>Frontend Developer</span></h1>
-        <p>I love creating and finding solutions<span><img src="../twemoji/assets/72x72/1f50d.png" alt="magnifying glass emoji"></span>. I'm dedicated to sef-development <span><img src="../twemoji/assets/72x72/1f4aa.png" alt="strong arm emoji"></span> and life
-            long
-            learning <span><img src="../twemoji/assets/72x72/1f469-1f3fe-200d-1f393.png" alt="graduation girl emoji"></span>. When I'm not crafting web magic <span><img src="../twemoji/assets/72x72/1fa84.png" alt="magic wand emoji"></span>, you can find me playing Stardew
-            Valley
-            <span><img src="../twemoji/assets/72x72/1f3ae.png" alt="video game controller emoji"></span> or relaxing with my two cats <span><img src="../twemoji/assets/72x72/1f63a.png" alt="cat emoji"></span>.
-        </p>  
-        <!-- GitHub Link -->
-        <i class="fa-brands fa-github fa-2xs" style="color: #00e296;"></i>
-        <!-- LinkedIn Link -->
-        <i class="fa-brands fa-linkedin-in fa-2xs" style="color: #00e296;"></i>
-        <!-- Slack Link -->
-        <i class="fa-brands fa-slack fa-2xs" style="color: #00e296;"></i>
-        <!-- Twitter Link -->
-        <i class="fa-brands fa-twitter fa-2xs" style="color: #00e296;"></i>
-        <!-- Discord Link -->
-        <i class="fa-brands fa-discord fa-2xs" style="color: #00e296;"></i>
+        <header>
+            <div class="container">
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="toggle-container">
+                    <span class="button button-toggle"></span>
+                </label>
+                <nav>
+                    <ul>
+                        <li>Projects</li>
+                        <li>Skills</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="contact">Get in touch</button>
+        </header>
+        <div class="content-wrapper">
+            <h1>Hi, I'm Kelsie. I'm a <span>Frontend Developer</span></h1>
+            <p>I love creating and finding solutions<span><img src="../twemoji/assets/72x72/1f50d.png"
+                        alt="magnifying glass emoji"></span>. I'm dedicated to sef-development <span><img
+                        src="../twemoji/assets/72x72/1f4aa.png" alt="strong arm emoji"></span> and life
+                long
+                learning <span><img src="../twemoji/assets/72x72/1f469-1f3fe-200d-1f393.png"
+                        alt="graduation girl emoji"></span>. When I'm not crafting web magic <span><img
+                        src="../twemoji/assets/72x72/1fa84.png" alt="magic wand emoji"></span>, you can find me playing
+                Stardew
+                Valley
+                <span><img src="../twemoji/assets/72x72/1f3ae.png" alt="video game controller emoji"></span> or relaxing
+                with my two cats <span><img src="../twemoji/assets/72x72/1f63a.png" alt="cat emoji"></span>.
+            </p>
+        </div>
+        <div class="social-icons">
+            <!-- GitHub Link -->
+            <i class="fa-brands fa-github fa-s" style="color: #00e296;"></i>
+            <!-- LinkedIn Link -->
+            <i class="fa-brands fa-linkedin-in fa-s" style="color: #00e296;"></i>
+            <!-- Slack Link -->
+            <i class="fa-brands fa-slack fa-s" style="color: #00e296;"></i>
+            <!-- Twitter Link -->
+            <i class="fa-brands fa-twitter fa-s" style="color: #00e296;"></i>
+            <!-- Discord Link -->
+            <i class="fa-brands fa-discord fa-s" style="color: #00e296;"></i>
+        </div>
         <!-- Scroll arrow -->
-        <img src="../twemoji/assets/72x72/1f447.png" alt="finger pointing down emoji">
+        <img class="scroll" src="../twemoji/assets/72x72/1f447.png" alt="finger pointing down emoji">
+
     </section>
     <section class="projects">
         <div class="content-wrapper">
-            <div class="project">
-                <h2>Projects</h2>
+            <h2>Projects</h2>
+            <div class="project-container">
                 <img src="img/guess-the-word-game-live.jpg">
-                <h3>Guess The Word Game</h3>
-                <p>Players guess the word by entering one letter at a time. If the player guesses all the letters
-                    correctly before they use up their allotted guesses, they win!</p>
-                <span>JavaScript</span>
-                <span>REST API</span>
-                <button class="demo">Live Demo</button>
+                <div class="project-content">
+                    <h3>Guess The Word Game</h3>
+                    <p>Players guess the word by entering one letter at a time. If the player guesses all the letters
+                        correctly before they use up their allotted guesses, they win!</p>
+                    <span>JavaScript</span>
+                    <span>REST API</span>
+                    <button class="demo">Live demo</button>
+                </div>
             </div>
-            <div class="project">
+            <div class="project-container">
                 <img src="img/sticky-notes-app-live-1.jpg">
-                <h3>Sticky Notes App</h3>
-                <p>An interactive app that lets users create, edit, filter, and delete “sticky notes” on their computer
-                    to keep track of to-do items.</p>
-                <span>React</span>
-                <button class="demo">Live Demo</button>
+                <div class="project-content">
+                    <h3>Sticky Notes App</h3>
+                    <p>An interactive app that lets users create, edit, filter, and delete “sticky notes” on their
+                        computer
+                        to keep track of to-do items.</p>
+                    <span>React</span>
+                    <button class="demo">Live demo</button>
+                </div>
             </div>
-            <div class="project">
+            <div class="project-container">
                 <img src="img/unplugged-live.jpg">
-                <h3>Unplugged</h3>
-                <p>A 3-page responsive website adaptable to mobile, tablet, and desktop screens built from a design comp
-                    with a Mobile First approach.</p>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Responsive Layout</span>
-                <button class="demo">Live Demo</button>
+                <div class="project-content">
+                    <h3>Unplugged</h3>
+                    <p>A 3-page responsive website adaptable to mobile, tablet, and desktop screens built from a design
+                        comp
+                        with a Mobile First approach.</p>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Responsive Layout</span>
+                    <button class="demo">Live demo</button>
+                </div>
             </div>
-            <div class="project">
+            <div class="project-container">
                 <img src="img/github-repo-gallery-live.jpg">
-                <h3>GitHub Repo Gallery</h3>
-                <p>Pulls data from the GitHub API to create a gallery of repos for visitors to see profile information,
-                    a list of each repo, and the ability to search for a specific repo.</p>
-                <span>JavaScript</span>
-                <span>GitHub API</span>
-                <button class="demo">Live Demo</button>
+                <div class="project-content">
+                    <h3>GitHub Repo Gallery</h3>
+                    <p>Pulls data from the GitHub API to create a gallery of repos for visitors to see profile
+                        information,
+                        a list of each repo, and the ability to search for a specific repo.</p>
+                    <span>JavaScript</span>
+                    <span>GitHub API</span>
+                    <button class="demo">Live demo</button>
+                </div>
             </div>
         </div>
     </section>
     <section class="skills">
         <div class="content-wrapper">
             <h2>Skills</h2>
-            <div>
-                <div></div> <!-- HTML -->
-                <div></div> <!-- CSS -->
-                <div></div> <!-- JS -->
-                <div></div> <!-- React -->
-                <div></div> <!-- NodeJS -->
+            <div class="skills">
+                <div class="wrapper">
+                    <div class="tiles-card html">
+                        <div class="tiles-overlay">
+
+                        </div>
+                        <div class="tiles-circle">
+                            <img src="img/icons8-html-logo-48.png">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                </div> <!-- HTML -->
+                <div class="wrapper">
+                    <div class="tiles-card css">
+                        <div class="tiles-overlay">
+
+                        </div>
+                        <div class="tiles-circle">
+                            <img src="img/icons8-css-logo-48.png">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                </div> <!-- CSS -->
+                <div class="wrapper">
+                    <div class="tiles-card js">
+                        <div class="tiles-overlay">
+
+                        </div>
+                        <div class="tiles-circle">
+                            <img src="img/icons8-javascript-48.png">
+                            <p>JS</p>
+                        </div>
+                    </div>
+                </div> <!-- JS -->
+                <div class="wrapper">
+                    <div class="tiles-card react">
+                        <div class="tiles-overlay">
+
+                        </div>
+                        <div class="tiles-circle">
+                            <img src="img/icons8-react-native-48.png">
+                            <p>React</p>
+                        </div>
+                    </div>
+                </div> <!-- React -->
+                <div class="wrapper">
+                    <div class="tiles-card node">
+                        <div class="tiles-overlay">
+
+                        </div>
+                        <div class="tiles-circle">
+                            <img src="img/icons8-node-js-48.png">
+                            <p>Node.JS</p>
+                        </div>
+                    </div>
+                </div> <!-- NodeJS -->
             </div>
             <h2>Tools</h2>
-            <div>
-                <div>Chrome DevTools</div>
-                <div>Visual Studio Code</div>
-                <div>Git</div>
-                <div>GitHub</div>
-                <div>Figma</div>
-                <div>Photoshop</div>
+            <div class="tools">
+                <div class="tools-wrapper">
+                    <div class="rectangle-card root">
+                        <div class="rectangle">
+                            <p>Chrome DevTools</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-wrapper">
+                    <div class="rectangle-card root">
+                        <div class="rectangle">
+                            <p>Visual Studio Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-wrapper">
+                    <div class="rectangle-card root">
+                        <div class="rectangle">
+                            <p>Git</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-wrapper">
+                    <div class="rectangle-card root">
+                        <div class="rectangle">
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-wrapper">
+                    <div class="rectangle-card root">
+                        <div class="rectangle">
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-wrapper">
+                    <div class="rectangle-card root">
+                        <div class="rectangle">
+                            <p>Photoshop</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
