@@ -15,31 +15,32 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik:wght@400;500;600;700;900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/9f5df0578d.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js"
-        integrity="sha384-ICOlZarapRIX6UjKPcWKEpubjg7lGADN7Y9fYP4DU9zm0aPFhgnP5ef+XFaPyKv+"
-        crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <label for="check" class="close-menu"><svg fill="#e3e4e7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path clip-rule="evenodd" fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"></path>
+                      </svg></label>
+                </span>
+                <label for="check" class="open-menu"><svg fill="#e3e4e7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path clip-rule="evenodd" fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"></path>
+                  </svg></label>
+            </ul>
+        </nav>
+        <button class="contact">Get in touch</button>
+
+    </header>
     <section class="hero">
-        <!-- Navigation -->
-        <header>
-            <div class="container">
-                <input type="checkbox" id="toggle">
-                <label for="toggle" class="toggle-container">
-                    <span class="button button-toggle"></span>
-                </label>
-                <nav>
-                    <ul>
-                        <li>Projects</li>
-                        <li>Skills</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
-            </div>
-            <button class="contact">Get in touch</button>
-        </header>
         <div class="content-wrapper">
             <h1>Hi, I'm Kelsie. I'm a <span>Frontend Developer</span></h1>
             <p>I love creating and finding solutions<span><img src="../twemoji/assets/72x72/1f50d.png"
@@ -68,8 +69,11 @@
             <i class="fa-brands fa-discord fa-s" style="color: #00e296;"></i>
         </div>
         <!-- Scroll arrow -->
-        <img class="scroll" src="../twemoji/assets/72x72/1f447.png" alt="finger pointing down emoji">
-
+        <div class="down-scroll">
+        <svg fill="#e3e4e7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path clip-rule="evenodd" fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"></path>
+          </svg>
+        </div>
     </section>
     <section class="projects">
         <div class="content-wrapper">
@@ -82,8 +86,8 @@
                         correctly before they use up their allotted guesses, they win!</p>
                     <span>JavaScript</span>
                     <span>REST API</span>
-                    <button class="demo">Live demo</button>
                 </div>
+                <button class="demo">Live demo</button>
             </div>
             <div class="project-container">
                 <img src="img/sticky-notes-app-live-1.jpg">
@@ -93,8 +97,8 @@
                         computer
                         to keep track of to-do items.</p>
                     <span>React</span>
-                    <button class="demo">Live demo</button>
                 </div>
+                <button class="demo">Live demo</button>
             </div>
             <div class="project-container">
                 <img src="img/unplugged-live.jpg">
@@ -106,8 +110,8 @@
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>Responsive Layout</span>
-                    <button class="demo">Live demo</button>
                 </div>
+                <button class="demo">Live demo</button>
             </div>
             <div class="project-container">
                 <img src="img/github-repo-gallery-live.jpg">
@@ -118,8 +122,8 @@
                         a list of each repo, and the ability to search for a specific repo.</p>
                     <span>JavaScript</span>
                     <span>GitHub API</span>
-                    <button class="demo">Live demo</button>
                 </div>
+                <button class="demo">Live demo</button>
             </div>
         </div>
     </section>
@@ -127,104 +131,94 @@
         <div class="content-wrapper">
             <h2>Skills</h2>
             <div class="skills">
-                <div class="wrapper">
-                    <div class="tiles-card html">
-                        <div class="tiles-overlay">
+                <div class="skills-container">
+                    <div class="box-1"> <!-- HTML -->
+                        <div class="tiles-card html">
+                            <div class="tiles-overlay">
 
-                        </div>
-                        <div class="tiles-circle">
-                            <img src="img/icons8-html-logo-48.png">
-                            <p>HTML</p>
+                            </div>
+                            <div class="tiles-circle">
+                                <img src="img/icons8-html-logo-48.png">
+                                <p>HTML</p>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- HTML -->
-                <div class="wrapper">
-                    <div class="tiles-card css">
-                        <div class="tiles-overlay">
+                    <div class="box-2"> <!-- CSS -->
+                        <div class="tiles-card css">
+                            <div class="tiles-overlay">
 
-                        </div>
-                        <div class="tiles-circle">
-                            <img src="img/icons8-css-logo-48.png">
-                            <p>CSS</p>
+                            </div>
+                            <div class="tiles-circle">
+                                <img src="img/icons8-css-logo-48.png">
+                                <p>CSS</p>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- CSS -->
-                <div class="wrapper">
-                    <div class="tiles-card js">
-                        <div class="tiles-overlay">
+                    <div class="box-3"> <!-- JS -->
+                        <div class="tiles-card js">
+                            <div class="tiles-overlay">
 
-                        </div>
-                        <div class="tiles-circle">
-                            <img src="img/icons8-javascript-48.png">
-                            <p>JS</p>
+                            </div>
+                            <div class="tiles-circle">
+                                <img src="img/icons8-javascript-48.png">
+                                <p>JS</p>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- JS -->
-                <div class="wrapper">
-                    <div class="tiles-card react">
-                        <div class="tiles-overlay">
+                    <div class="box-4"> <!-- React -->
+                        <div class="tiles-card react">
+                            <div class="tiles-overlay">
 
-                        </div>
-                        <div class="tiles-circle">
-                            <img src="img/icons8-react-native-48.png">
-                            <p>React</p>
+                            </div>
+                            <div class="tiles-circle">
+                                <img src="img/icons8-react-native-48.png">
+                                <p>React</p>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- React -->
-                <div class="wrapper">
-                    <div class="tiles-card node">
-                        <div class="tiles-overlay">
+                    <div class="box-5"> <!-- NodeJS -->
+                        <div class="tiles-card node">
+                            <div class="tiles-overlay">
 
-                        </div>
-                        <div class="tiles-circle">
-                            <img src="img/icons8-node-js-48.png">
-                            <p>Node.JS</p>
+                            </div>
+                            <div class="tiles-circle">
+                                <img src="img/icons8-node-js-48.png">
+                                <p>Node.JS</p>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- NodeJS -->
+                </div>
             </div>
             <h2>Tools</h2>
             <div class="tools">
-                <div class="tools-wrapper">
-                    <div class="rectangle-card root">
-                        <div class="rectangle">
-                            <p>Chrome DevTools</p>
-                        </div>
+                <div class="tool-1">
+                    <div class="rectangle">
+                        <p>Chrome DevTools</p>
                     </div>
                 </div>
-                <div class="tools-wrapper">
-                    <div class="rectangle-card root">
-                        <div class="rectangle">
-                            <p>Visual Studio Code</p>
-                        </div>
+                <div class="tool-2">
+                    <div class="rectangle">
+                        <p>Visual Studio Code</p>
                     </div>
                 </div>
-                <div class="tools-wrapper">
-                    <div class="rectangle-card root">
-                        <div class="rectangle">
-                            <p>Git</p>
-                        </div>
+                <div class="tool-3">
+                    <div class="rectangle">
+                        <p>Git</p>
                     </div>
                 </div>
-                <div class="tools-wrapper">
-                    <div class="rectangle-card root">
-                        <div class="rectangle">
-                            <p>GitHub</p>
-                        </div>
+                <div class="tool-4">
+                    <div class="rectangle">
+                        <p>GitHub</p>
                     </div>
                 </div>
-                <div class="tools-wrapper">
-                    <div class="rectangle-card root">
-                        <div class="rectangle">
-                            <p>Figma</p>
-                        </div>
+                <div class="tool-5">
+                    <div class="rectangle">
+                        <p>Figma</p>
                     </div>
                 </div>
-                <div class="tools-wrapper">
-                    <div class="rectangle-card root">
-                        <div class="rectangle">
-                            <p>Photoshop</p>
-                        </div>
+                <div class="tool-6">
+                    <div class="rectangle">
+                        <p>Photoshop</p>
                     </div>
                 </div>
             </div>
@@ -232,18 +226,16 @@
     </section>
     <section class="about">
         <div class="content-wrapper">
-            <div>
-                <div></div>
-                <!-- Image -->
-                <div></div>
+            <div class="photo">
+                <img src="img/369.png" alt="profile photo of Kelsie Paige">
             </div>
             <div>
                 <h4>Hi, there! I'm Kelsie.</h4>
                 <p>I have always been captivated by the process of problem-solving, and I am grateful to have found a
                     career that allows me to utilize this skill with a creative twist. Frontend development presents me
                     with a unique set of challenges that constantly push me to think creatively and come up with
-                    innovative solutions.</p>
-                <p>One of the things that truly fuels my passion for frontend development is the constant opportunity
+                    innovative solutions.<br><br>
+                    One of the things that truly fuels my passion for frontend development is the constant opportunity
                     for self-development and learning. In this rapidly evolving industry, there is always something new
                     to discover and master. I embrace this aspect wholeheartedly, as it motivates me to stay curious,
                     stay up-to-date with the latest technologies, and continuously enhance my skills.</p>
@@ -253,22 +245,23 @@
     <section class="contact">
         <div class="content-wrapper">
             <h2>Let's Connect</h2>
-            <div>
+            <div class="contact-content">
                 <h3>Hire me</h3>
                 <span>kelsie.p.brown@gmail.com</span>
-            </div>
-            <div>
                 <h3>Follow me</h3>
                 <!-- GitHub Link -->
-                <i class="fa-brands fa-github fa-2xs" style="color: #00e296;"></i>
-                <!-- LinkedIn Link -->
-                <i class="fa-brands fa-linkedin-in fa-2xs" style="color: #00e296;"></i>
-                <!-- Slack Link -->
-                <i class="fa-brands fa-slack fa-2xs" style="color: #00e296;"></i>
-                <!-- Twitter Link -->
-                <i class="fa-brands fa-twitter fa-2xs" style="color: #00e296;"></i>
-                <!-- Discord Link -->
-                <i class="fa-brands fa-discord fa-2xs" style="color: #00e296;"></i>
+                <div class="social-icons">
+                    <!-- GitHub Link -->
+                    <i class="fa-brands fa-github fa-s" style="color: #00e296;"></i>
+                    <!-- LinkedIn Link -->
+                    <i class="fa-brands fa-linkedin-in fa-s" style="color: #00e296;"></i>
+                    <!-- Slack Link -->
+                    <i class="fa-brands fa-slack fa-s" style="color: #00e296;"></i>
+                    <!-- Twitter Link -->
+                    <i class="fa-brands fa-twitter fa-s" style="color: #00e296;"></i>
+                    <!-- Discord Link -->
+                    <i class="fa-brands fa-discord fa-s" style="color: #00e296;"></i>
+                </div>
             </div>
             <button class="contact">Get in touch</button>
         </div>
