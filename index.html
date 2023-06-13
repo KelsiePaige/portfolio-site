@@ -15,11 +15,12 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik:wght@400;500;600;700;900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/9f5df0578d.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
     <header>
+        
         <nav>
             <ul class="nav-bar">
                 <input type="checkbox" id="check">
@@ -27,17 +28,13 @@
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <label for="check" class="close-menu"><svg fill="#e3e4e7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path clip-rule="evenodd" fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"></path>
-                      </svg></label>
+                    <li><button class="contact-btn"><img src="img/button.png" alt=""></button></li>
+                    <label for="check" class="close-menu"><img src="img/close-menu.png" alt=""></label>
                 </span>
-                <label for="check" class="open-menu"><svg fill="#e3e4e7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path clip-rule="evenodd" fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"></path>
-                  </svg></label>
+                <label for="check" class="open-menu"><img src="img/open-menu.png" alt=""></label>
             </ul>
         </nav>
-        <button class="contact">Get in touch</button>
+        <button class="contact-btn"><img src="img/button.png" alt=""></button>
 
     </header>
     <section class="hero">
@@ -58,75 +55,90 @@
         </div>
         <div class="social-icons">
             <!-- GitHub Link -->
-            <i class="fa-brands fa-github fa-s" style="color: #00e296;"></i>
+            <a href="https://github.com/KelsiePaige" target="_blank noopener"><img src="img/github-icon.png"></a>
             <!-- LinkedIn Link -->
-            <i class="fa-brands fa-linkedin-in fa-s" style="color: #00e296;"></i>
-            <!-- Slack Link -->
-            <i class="fa-brands fa-slack fa-s" style="color: #00e296;"></i>
+            <a href="https://www.linkedin.com/in/kelsie-paige-290456172/" target="_blank noopener"><img src="img/linkedin-icon.png"></a>
             <!-- Twitter Link -->
-            <i class="fa-brands fa-twitter fa-s" style="color: #00e296;"></i>
-            <!-- Discord Link -->
-            <i class="fa-brands fa-discord fa-s" style="color: #00e296;"></i>
+            <a href="https://twitter.com/Kelsie_Codes" target="_blank noopener"><img src="img/twitter-icon.png"></a>
         </div>
         <!-- Scroll arrow -->
         <div class="down-scroll">
-        <svg fill="#e3e4e7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path clip-rule="evenodd" fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"></path>
-          </svg>
+            <svg fill="#e3e4e7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path clip-rule="evenodd" fill-rule="evenodd"
+                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z">
+                </path>
+            </svg>
         </div>
     </section>
     <section class="projects">
         <div class="content-wrapper">
             <h2>Projects</h2>
             <div class="project-container">
-                <img src="img/guess-the-word-game-live.jpg">
                 <div class="project-content">
+                    <img src="img/guess-the-word-game-live.jpg">
                     <h3>Guess The Word Game</h3>
                     <p>Players guess the word by entering one letter at a time. If the player guesses all the letters
                         correctly before they use up their allotted guesses, they win!</p>
+                </div>
+                <div class="stack">
                     <span>JavaScript</span>
                     <span>REST API</span>
                 </div>
-                <button class="demo">Live demo</button>
+                <a href="https://kelsiepaige.github.io/guess-the-word/" target="_blank noopener"><button
+                        class="demo">Live demo</button></a>
             </div>
+
             <div class="project-container">
-                <img src="img/sticky-notes-app-live-1.jpg">
                 <div class="project-content">
+                    <img src="img/sticky-notes-app-live-1.jpg">
                     <h3>Sticky Notes App</h3>
                     <p>An interactive app that lets users create, edit, filter, and delete “sticky notes” on their
                         computer
                         to keep track of to-do items.</p>
+                </div>
+                <div class="stack">
                     <span>React</span>
                 </div>
-                <button class="demo">Live demo</button>
+                <a href="https://codesandbox.io/s/sticky-note-finalize-ui-q4ddle" target="_blank noopener"><button
+                        class="demo">Live demo</button></a>
             </div>
+
             <div class="project-container">
-                <img src="img/unplugged-live.jpg">
                 <div class="project-content">
+                    <img src="img/unplugged-live.jpg">
                     <h3>Unplugged</h3>
                     <p>A 3-page responsive website adaptable to mobile, tablet, and desktop screens built from a design
                         comp
                         with a Mobile First approach.</p>
+                </div>
+                <div class="stack">
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>Responsive Layout</span>
                 </div>
-                <button class="demo">Live demo</button>
+                <a href="https://kelsiepaige.github.io/unplugged-project/index.html" target="_blank noopener"><button
+                        class="demo">Live demo</button></a>
             </div>
+
             <div class="project-container">
-                <img src="img/github-repo-gallery-live.jpg">
                 <div class="project-content">
+                    <img src="img/github-repo-gallery-live.jpg">
                     <h3>GitHub Repo Gallery</h3>
                     <p>Pulls data from the GitHub API to create a gallery of repos for visitors to see profile
                         information,
                         a list of each repo, and the ability to search for a specific repo.</p>
+                </div>
+                <div class="stack">
                     <span>JavaScript</span>
                     <span>GitHub API</span>
                 </div>
-                <button class="demo">Live demo</button>
+                <a href="https://kelsiepaige.github.io/github-repo-gallery/" target="_blank noopener"><button
+                        class="demo">Live demo</button></a>
             </div>
+
         </div>
     </section>
+   
     <section class="skills">
         <div class="content-wrapper">
             <h2>Skills</h2>
@@ -192,34 +204,22 @@
             <h2>Tools</h2>
             <div class="tools">
                 <div class="tool-1">
-                    <div class="rectangle">
-                        <p>Chrome DevTools</p>
-                    </div>
+                    <img src="img/chrome-devtools.png" alt="">
                 </div>
                 <div class="tool-2">
-                    <div class="rectangle">
-                        <p>Visual Studio Code</p>
-                    </div>
+                    <img src="img/visual-studio-code.png" alt="">
                 </div>
                 <div class="tool-3">
-                    <div class="rectangle">
-                        <p>Git</p>
-                    </div>
+                    <img src="img/git.png" alt="">
                 </div>
                 <div class="tool-4">
-                    <div class="rectangle">
-                        <p>GitHub</p>
-                    </div>
+                    <img src="img/github.png" alt="">
                 </div>
                 <div class="tool-5">
-                    <div class="rectangle">
-                        <p>Figma</p>
-                    </div>
+                    <img src="img/figma.png" alt="">
                 </div>
                 <div class="tool-6">
-                    <div class="rectangle">
-                        <p>Photoshop</p>
-                    </div>
+                    <img src="img/photoshop.png" alt="">
                 </div>
             </div>
         </div>
@@ -247,23 +247,18 @@
             <h2>Let's Connect</h2>
             <div class="contact-content">
                 <h3>Hire me</h3>
-                <span>kelsie.p.brown@gmail.com</span>
+                <p>kelsie.p.brown@gmail.com</p>
                 <h3>Follow me</h3>
-                <!-- GitHub Link -->
                 <div class="social-icons">
                     <!-- GitHub Link -->
-                    <i class="fa-brands fa-github fa-s" style="color: #00e296;"></i>
+                    <a href="https://github.com/KelsiePaige" target="_blank noopener"><img src="img/github-icon.png"></a>
                     <!-- LinkedIn Link -->
-                    <i class="fa-brands fa-linkedin-in fa-s" style="color: #00e296;"></i>
-                    <!-- Slack Link -->
-                    <i class="fa-brands fa-slack fa-s" style="color: #00e296;"></i>
+                    <a href="https://www.linkedin.com/in/kelsie-paige-290456172/" target="_blank noopener"><img src="img/linkedin-icon.png"></a>
                     <!-- Twitter Link -->
-                    <i class="fa-brands fa-twitter fa-s" style="color: #00e296;"></i>
-                    <!-- Discord Link -->
-                    <i class="fa-brands fa-discord fa-s" style="color: #00e296;"></i>
+                    <a href="https://twitter.com/Kelsie_Codes" target="_blank noopener"><img src="img/twitter-icon.png"></a>
                 </div>
             </div>
-            <button class="contact">Get in touch</button>
+            <button class="contact-btn"><img src="img/button.png" alt=""></button>
         </div>
     </section>
     <footer>
