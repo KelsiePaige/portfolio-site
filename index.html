@@ -14,27 +14,50 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik:wght@400;500;600;700;900&display=swap"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9f5df0578d.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <header>
+        <div class="navbar">
+        <div class="logo"><a href="#">Kelsie Paige</a></div>
+            <ul class="links">
+                <li><a href="hero">Home</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="skills">Skills</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <div class="open_menu">
+                <img src="img/open-menu.svg" alt="">
+            </div>
+        </div>
 
-        <nav>
+        <div class="dropdown_menu open">
+            <li class="close_menu"><img src="img/close-menu.svg"></li>
+            <li><a href="hero">Home</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="skillset">Skills</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="#" class="action_btn">Get in touch</a></li>
+        </div>
+        
+
+        <!-- <nav>
             <ul class="nav-bar">
                 <input type="checkbox" id="check">
                 <span class="menu">
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">About</a></li>
-                    <li><button class="contact-btn"><img src="img/button.png" alt=""></button></li>
+                    <li><a href="#">Contact</a></li>
                     <label for="check" class="close-menu"><img src="img/close-menu.png" alt=""></label>
                 </span>
                 <label for="check" class="open-menu"><img src="img/open-menu.png" alt=""></label>
             </ul>
         </nav>
-        <button class="contact-btn"><img src="img/button.png" alt=""></button>
+        <button class="contact-btn"><img src="img/button.png" alt=""></button> -->
 
     </header>
     <section class="hero">
@@ -55,12 +78,15 @@
         </div>
         <div class="social-icons">
             <!-- GitHub Link -->
-            <a href="https://github.com/KelsiePaige" target="_blank noopener"><img src="img/github-icon.png"></a>
+            <a href="https://github.com/KelsiePaige" target="_blank noopener"><img src="img/github-icon.svg"></a>
             <!-- LinkedIn Link -->
             <a href="https://www.linkedin.com/in/kelsie-paige-290456172/" target="_blank noopener"><img
-                    src="img/linkedin-icon.png"></a>
+                    src="img/linkedin-icon.svg"></a>
             <!-- Twitter Link -->
-            <a href="https://twitter.com/Kelsie_Codes" target="_blank noopener"><img src="img/twitter-icon.png"></a>
+            <a href="https://twitter.com/Kelsie_Codes" target="_blank noopener"><img src="img/twitter-icon.svg"></a>
+        </div>
+        <div class="btn btn_hero">
+            <a href="https://calendly.com/kelsie-paige/30min" class="action_btn">Get in touch</a>
         </div>
         <!-- Scroll arrow -->
         <div class="down-scroll">
@@ -139,7 +165,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skillset">
         <div class="content-wrapper">
             <h2 class="skills-title">Skills</h2>
             <div class="skills">
@@ -257,16 +283,18 @@
                 <div class="social-icons contact-4">
                     <!-- GitHub Link -->
                     <a href="https://github.com/KelsiePaige" target="_blank noopener"><img
-                            src="img/github-icon.png"></a>
+                            src="img/github-icon.svg"></a>
                     <!-- LinkedIn Link -->
                     <a href="https://www.linkedin.com/in/kelsie-paige-290456172/" target="_blank noopener"><img
-                            src="img/linkedin-icon.png"></a>
+                            src="img/linkedin-icon.svg"></a>
                     <!-- Twitter Link -->
                     <a href="https://twitter.com/Kelsie_Codes" target="_blank noopener"><img
-                            src="img/twitter-icon.png"></a>
+                            src="img/twitter-icon.svg"></a>
                 </div>
             </div>
-            <button class="contact-btn"><img src="img/button.png" alt=""></button>
+            <div class="btn btn_contact">
+                <a href="https://calendly.com/kelsie-paige/30min" class="action_btn">Get in touch</a>
+            </div>
         </div>
     </section>
     <footer>
