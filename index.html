@@ -20,17 +20,21 @@
 <body>
     <header>
         <div class="navbar">
-        <div class="logo"><a href="#">Kelsie Paige</a></div>
+            <div class="logo"><a href="#">Kelsie Paige</a></div>
             <ul class="links">
                 <li><a href="hero">Home</a></li>
                 <li><a href="projects">Projects</a></li>
                 <li><a href="skills">Skills</a></li>
                 <li><a href="about">About</a></li>
                 <li><a href="contact">Contact</a></li>
+                <li class="btn btn_nav">
+                    <a href="https://calendly.com/kelsie-paige/30min" class="action_btn">Get in touch</a>
+                </li>
             </ul>
             <div class="open_menu">
                 <img src="img/open-menu.svg" alt="">
             </div>
+
         </div>
 
         <div class="dropdown_menu open">
@@ -42,24 +46,8 @@
             <li><a href="contact">Contact</a></li>
             <li><a href="#" class="action_btn">Get in touch</a></li>
         </div>
-        
-
-        <!-- <nav>
-            <ul class="nav-bar">
-                <input type="checkbox" id="check">
-                <span class="menu">
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <label for="check" class="close-menu"><img src="img/close-menu.png" alt=""></label>
-                </span>
-                <label for="check" class="open-menu"><img src="img/open-menu.png" alt=""></label>
-            </ul>
-        </nav>
-        <button class="contact-btn"><img src="img/button.png" alt=""></button> -->
-
     </header>
+
     <section class="hero">
         <div class="content-wrapper">
             <h1>Hi, I'm Kelsie. I'm a <span>Frontend Developer</span></h1>
@@ -109,8 +97,10 @@
                         <span>JavaScript</span>
                         <span>REST API</span>
                     </div>
-                    <a href="https://kelsiepaige.github.io/guess-the-word/" target="_blank noopener"><button
-                            class="demo">Live demo</button></a>
+                    <div class="btn btn_demo">
+                        <a href="https://kelsiepaige.github.io/guess-the-word/" target="_blank noopener">Live Demo</a>
+                    </div>
+
                 </div>
 
                 <div class="project-container project-2">
@@ -124,8 +114,10 @@
                     <div class="stack">
                         <span>React</span>
                     </div>
-                    <a href="https://codesandbox.io/s/sticky-note-finalize-ui-q4ddle" target="_blank noopener"><button
-                            class="demo">Live demo</button></a>
+                    <div class="btn btn_demo">
+                        <a href="https://codesandbox.io/s/sticky-note-finalize-ui-q4ddle" target="_blank noopener">Live
+                            Demo</a>
+                    </div>
                 </div>
 
                 <div class="project-container project-3">
@@ -142,8 +134,10 @@
                         <span>CSS</span>
                         <span>Responsive Layout</span>
                     </div>
-                    <a href="https://kelsiepaige.github.io/unplugged-project/index.html"
-                        target="_blank noopener"><button class="demo">Live demo</button></a>
+                    <div class="btn btn_demo">
+                        <a href="https://kelsiepaige.github.io/unplugged-project/index.html"
+                            target="_blank noopener">Live Demo</a>
+                    </div>
                 </div>
 
                 <div class="project-container project-4">
@@ -158,8 +152,10 @@
                         <span>JavaScript</span>
                         <span>GitHub API</span>
                     </div>
-                    <a href="https://kelsiepaige.github.io/github-repo-gallery/" target="_blank noopener"><button
-                            class="demo">Live demo</button></a>
+                    <div class="btn btn_demo">
+                        <a href="https://kelsiepaige.github.io/github-repo-gallery/" target="_blank noopener">Live
+                            Demo</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -230,24 +226,12 @@
             <h2 class="tool-title">Tools</h2>
             <div class="tools">
                 <div class="tools-container">
-                    <div class="tool-1">
-                        <img src="img/chrome-devtools.svg" alt="">
-                    </div>
-                    <div class="tool-2">
-                        <img src="img/visual-studio-code.svg" alt="">
-                    </div>
-                    <div class="tool-3">
-                        <img src="img/git.svg" alt="">
-                    </div>
-                    <div class="tool-4">
-                        <img src="img/github.svg" alt="">
-                    </div>
-                    <div class="tool-5">
-                        <img src="img/figma.svg" alt="">
-                    </div>
-                    <div class="tool-6">
-                        <img src="img/photoshop.svg" alt="">
-                    </div>
+                    <div class="tool tool-1">Chrome DevTools</div>
+                    <div class="tool tool-2">Visual Studio Code</div>
+                    <div class="tool tool-3">Git</div>
+                    <div class="tool tool-4">GitHub</div>
+                    <div class="tool tool-5">Figma</div>
+                    <div class="tool tool-6">Photoshop</div>
                 </div>
             </div>
         </div>
@@ -256,6 +240,7 @@
 
         <div class="content-wrapper">
             <div class="background-box"></div>
+
             <div class="photo">
                 <img src="img/369_bg.jpg" alt="Photo of Kelsie Paige">
             </div>
@@ -270,7 +255,6 @@
                     to discover and master. I embrace this aspect wholeheartedly, as it motivates me to stay curious,
                     stay up-to-date with the latest technologies, and continuously enhance my skills.</p>
             </div>
-
         </div>
     </section>
     <section class="contact">
